@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="arm-none-eabi-gcc -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wall -g -nostartfiles -Map=stm32f429.map -O0 --gc-sections -LC:\CooCox\CoIDE\configuration\ProgramData\stm32f429 -TC:\CooCox\CoIDE\configuration\ProgramData\stm32f429/arm-gcc-link.ld -g -L..\..\..\emWin -l_stemwin522_cm4_gcc">
+      <target file="stm32f429.elf" lastModified="146e097a971">
+         <source file="..\obj\stm32_ub_sdram.o" lastModified="146e03761dc"/>
+         <source file="..\obj\GUIConf.o" lastModified="146e03762a3"/>
+         <source file="..\obj\stm32f4xx_dma2d.o" lastModified="146e03763ec"/>
+         <source file="..\obj\stm32_ub_i2c3.o" lastModified="146e037654e"/>
+         <source file="..\obj\stm32f4xx_ltdc.o" lastModified="146e0376702"/>
+         <source file="..\obj\startup_stm32f4xx.o" lastModified="146e0376797"/>
+         <source file="..\obj\stm32_ub_led.o" lastModified="146e0376887"/>
+         <source file="..\obj\stm32_ub_stemwin.o" lastModified="146e03769f0"/>
+         <source file="..\obj\main.o" lastModified="146e0376b5e"/>
+         <source file="..\obj\WindowDLG.o" lastModified="146e097a27d"/>
+         <source file="..\obj\stm32f4xx_rcc.o" lastModified="146e0376e93"/>
+         <source file="..\obj\stm32xxx_it.o" lastModified="146e0376fe5"/>
+         <source file="..\obj\stm32_ub_lcd_ili9341.o" lastModified="146e0377192"/>
+         <source file="..\obj\stm32f4xx_gpio.o" lastModified="146e03772b6"/>
+         <source file="..\obj\system_stm32f4xx.o" lastModified="146e03773b2"/>
+         <source file="..\obj\syscalls.o" lastModified="146e0377494"/>
+         <source file="..\obj\stm32_ub_spi5.o" lastModified="146e03775a2"/>
+         <source file="..\obj\stm32f4xx_fmc.o" lastModified="146e037773e"/>
+         <source file="..\obj\stm32f4xx_spi.o" lastModified="146e03778ab"/>
+         <source file="..\obj\stm32f4xx_i2c.o" lastModified="146e0377a76"/>
+         <source file="..\obj\GUIDRV_stm32f429i_discovery.o" lastModified="146e0377c69"/>
+         <source file="..\obj\stm32_ub_touch_stmpe811.o" lastModified="146e0377dab"/>
+         <source file="..\obj\GUI_X.o" lastModified="146e0377e73"/>
+      </target>
+   </processor>
+</history>

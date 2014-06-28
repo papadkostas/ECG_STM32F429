@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<history>
+   <processor signature="arm-none-eabi-gcc noversion nomachine -mcpu=cortex-m4 -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wall -ffunction-sections -g -O0 -c -DSTM32F4XX -DUSE_STDPERIPH_DRIVER -D__ASSEMBLY__ -DSTM32F429_439xx -D__FPU_USED -ID:\My Documents\GitHub\ECG\cmsis_boot -ID:\My Documents\GitHub\ECG\cmsis_lib -ID:\My Documents\GitHub\ECG -ID:\My Documents\GitHub\ECG\emWin\inc -ID:\My Documents\GitHub\ECG\cmsis_lib\include -ID:\My Documents -ID:\My Documents\GitHub\ECG\cmsis -ID:\My Documents\GitHub\ECG\emWin\ub -ID:\My Documents\GitHub\ECG\emWin -ID:\My Documents\GitHub\ECG\emWin\config -ID:\My Documents\GitHub -ID:\My Documents\GitHub\ECG\emWin\st">
+      <target file="stm32f4xx_gpio.o" lastModified="146e03772b6">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_gpio.c" lastModified="1412fa6baf0"/>
+      </target>
+      <target file="startup_stm32f4xx.o" lastModified="146e0376797">
+         <source file="..\..\..\cmsis_boot\startup\startup_stm32f4xx.c" lastModified="141f8c20980"/>
+      </target>
+      <target file="GUIDRV_stm32f429i_discovery.o" lastModified="146e0377c69">
+         <source file="..\..\..\emWin\config\GUIDRV_stm32f429i_discovery.c" lastModified="143068c7950"/>
+      </target>
+      <target file="system_stm32f4xx.o" lastModified="146e03773b2">
+         <source file="..\..\..\cmsis_boot\system_stm32f4xx.c" lastModified="141e5f775b0"/>
+      </target>
+      <target file="stm32_ub_i2c3.o" lastModified="146e037654e">
+         <source file="..\..\..\emWin\ub\stm32_ub_i2c3.c" lastModified="145fa27de44"/>
+      </target>
+      <target file="GUI_X.o" lastModified="146e0377e73">
+         <source file="..\..\..\emWin\os\GUI_X.c" lastModified="14271a9b280"/>
+      </target>
+      <target file="stm32f4xx_dma2d.o" lastModified="146e03763ec">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_dma2d.c" lastModified="1412fa6baf0"/>
+      </target>
+      <target file="stm32_ub_led.o" lastModified="146e0376887">
+         <source file="..\..\..\emWin\ub\stm32_ub_led.c" lastModified="141eb0c16a0"/>
+      </target>
+      <target file="stm32f4xx_spi.o" lastModified="146e03778ab">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_spi.c" lastModified="1423985a984"/>
+      </target>
+      <target file="WindowDLG.o" lastModified="146e097a27d">
+         <source file="..\..\..\ECG\WindowDLG.c" lastModified="146e0979843"/>
+      </target>
+      <target file="stm32_ub_sdram.o" lastModified="146e03761dc">
+         <source file="..\..\..\emWin\ub\stm32_ub_sdram.c" lastModified="141eb2a6470"/>
+      </target>
+      <target file="stm32f4xx_rcc.o" lastModified="146e0376e93">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_rcc.c" lastModified="1412fa6baf0"/>
+      </target>
+      <target file="stm32f4xx_fmc.o" lastModified="146e037773e">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_fmc.c" lastModified="1423985a780"/>
+      </target>
+      <target file="syscalls.o" lastModified="146e0377494">
+         <source file="..\..\..\syscalls.c" lastModified="1423377c2e0"/>
+      </target>
+      <target file="stm32f4xx_i2c.o" lastModified="146e0377a76">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_i2c.c" lastModified="1423985a83c"/>
+      </target>
+      <target file="stm32_ub_lcd_ili9341.o" lastModified="146e0377192">
+         <source file="..\..\..\emWin\ub\stm32_ub_lcd_ili9341.c" lastModified="14241e0c980"/>
+      </target>
+      <target file="stm32f4xx_ltdc.o" lastModified="146e0376702">
+         <source file="..\..\..\cmsis_lib\source\stm32f4xx_ltdc.c" lastModified="1423985a86a"/>
+      </target>
+      <target file="stm32_ub_touch_stmpe811.o" lastModified="146e0377dab">
+         <source file="..\..\..\emWin\ub\stm32_ub_touch_stmpe811.c" lastModified="1421d332b50"/>
+      </target>
+      <target file="stm32xxx_it.o" lastModified="146e0376fe5">
+         <source file="..\..\..\emWin\st\stm32xxx_it.c" lastModified="14306b02620"/>
+      </target>
+      <target file="stm32_ub_spi5.o" lastModified="146e03775a2">
+         <source file="..\..\..\emWin\ub\stm32_ub_spi5.c" lastModified="142035d1060"/>
+      </target>
+      <target file="stm32_ub_stemwin.o" lastModified="146e03769f0">
+         <source file="..\..\..\emWin\stm32_ub_stemwin.c" lastModified="1430bb98440"/>
+      </target>
+      <target file="main.o" lastModified="146e0376b5e">
+         <source file="..\..\..\main.c" lastModified="146d9a829b5"/>
+      </target>
+      <target file="GUIConf.o" lastModified="146e03762a3">
+         <source file="..\..\..\emWin\config\GUIConf.c" lastModified="1430bb6dc90"/>
+      </target>
+   </processor>
+</history>
