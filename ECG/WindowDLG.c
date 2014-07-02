@@ -30,14 +30,14 @@ Requirements: WindowManager - (x)
 
 #include "DIALOG.h"
 #include "GRAPH.h"
-
+#include "stm32_ub_adc1_single.h"
 /*********************************************************************
 *
 *       Defines
 *
 **********************************************************************
 */
-#define MAX_VALUE 150
+#define MAX_VALUE 500
 #define MIN_VALUE 0
 
 /*********************************************************************
@@ -60,7 +60,7 @@ static GUI_COLOR _aColor[] = {GUI_RED, GUI_GREEN, GUI_LIGHTBLUE}; // Array of co
 //
 static const GUI_WIDGET_CREATE_INFO _aDialogCreate[] = {
   { FRAMEWIN_CreateIndirect, "ECG with STM32F429-Discovery and emWin",  0,   0,   0, 240, 320, FRAMEWIN_CF_MOVEABLE },
-  { GRAPH_CreateIndirect,     0,                   GUI_ID_GRAPH0    ,   5,   5, 270, 175 },
+  { GRAPH_CreateIndirect,     0,                   GUI_ID_GRAPH0    ,   5,   5, 230, 170 },
   { TEXT_CreateIndirect,      "Spacing X:",        0                ,   5, 185,  50,  20 },
   { TEXT_CreateIndirect,      "Spacing Y:",        0                ,   5, 205,  50,  20 },
   { SLIDER_CreateIndirect,    0,                   GUI_ID_SLIDER0   ,  60, 185,  60,  16 },
@@ -76,7 +76,7 @@ static const GUI_WIDGET_CREATE_INFO _aDialogCreate[] = {
   { RADIO_CreateIndirect,     0,                   GUI_ID_RADIO0    ,  40, 230,  35,   0, 0, 3 },
   { CHECKBOX_CreateIndirect,  0,                   GUI_ID_CHECK6    , 180, 185,  50,   0 },
   { CHECKBOX_CreateIndirect,  0,                   GUI_ID_CHECK7    , 180, 205,  50,   0 },
-  { BUTTON_CreateIndirect,    "Full Screen",       GUI_ID_BUTTON0   , 180, 270,  65,  18 },
+  { BUTTON_CreateIndirect,    "Full Screen",       GUI_ID_BUTTON0   , 160, 270,  65,  18 },
   { CHECKBOX_CreateIndirect,  0,                   GUI_ID_CHECK8    , 180, 235,  70,   0 },
 };
 
@@ -95,24 +95,8 @@ static const GUI_WIDGET_CREATE_INFO _aDialogCreate[] = {
 *   and adds them to the GRAPH_DATA objects
 */
 static void _AddValues(void) {
-	_aValue[1]++;
-	if(_aValue[1]>=MAX_VALUE){
-		_aValue[1]=MIN_VALUE;
-	}
+	_aValue[1]=UB_ADC1_SINGLE_Read(ADC_PA5)/10;
 	GRAPH_DATA_YT_AddValue(_ahData[1], _aValue[1]);
-  /*unsigned i;
-
-  for (i = 0; i < GUI_COUNTOF(_aColor); i++) {
-    int Add = ((unsigned)rand()) % (2 + i * i);
-    int Vz  = (((unsigned)(rand()) % 2) << 1) - 1;
-    _aValue[i] += Add * Vz;
-    if (_aValue[i] > MAX_VALUE) {
-      _aValue[i] = MAX_VALUE;
-    } else if (_aValue[i] < 0) {
-      _aValue[i] = 0;
-    }
-    GRAPH_DATA_YT_AddValue(_ahData[i], _aValue[i]);
-  }*/
 }
 
 /*********************************************************************
@@ -427,7 +411,7 @@ static void _cbCallback(WM_MESSAGE * pMsg) {
 void MainTask(void) {
   WM_HWIN hDlg;
   WM_HWIN hGraph;
-
+  UB_ADC1_SINGLE_Init();
   hGraph = 0;
   GUI_Init();
   GUI_CURSOR_Show();

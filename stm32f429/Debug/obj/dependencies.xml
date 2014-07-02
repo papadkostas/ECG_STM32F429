@@ -35,11 +35,6 @@
          <include file="..\..\..\emWin\inc\DIALOG_Intern.h"/>
          <include file="..\..\..\emWin\inc\WIDGET.h"/>
       </source>
-      <source file="..\..\..\cmsis\core_cm4.h" lastModified="1412c1487c8">
-         <include file="..\..\..\cmsis\core_cmInstr.h"/>
-         <include file="..\..\..\cmsis\core_cmFunc.h"/>
-         <include file="..\..\..\cmsis\core_cm4_simd.h"/>
-      </source>
       <source file="..\..\..\cmsis_lib\source\stm32f4xx_i2c.c" lastModified="1423985a83c">
          <include file="..\..\..\cmsis_lib\include\stm32f4xx_i2c.h"/>
          <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
@@ -80,8 +75,6 @@
          <include file="..\..\..\emWin\inc\WIDGET.h"/>
          <include file="..\..\..\emWin\inc\GUI_Debug.h"/>
       </source>
-      <source file="..\..\..\syscalls.c" lastModified="1423377d280">
-      </source>
       <source file="..\..\..\emWin\ub\stm32_ub_lcd_ili9341.h" lastModified="14241cbb310">
          <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
          <include file="..\..\..\cmsis_lib\include\stm32f4xx_gpio.h"/>
@@ -90,11 +83,6 @@
          <include file="..\..\..\cmsis_lib\include\stm32f4xx_ltdc.h"/>
          <include file="..\..\..\emWin\ub\stm32_ub_spi5.h"/>
          <include file="..\..\..\emWin\ub\stm32_ub_sdram.h"/>
-      </source>
-      <source file="..\..\..\cmsis_boot\stm32f4xx.h" lastModified="141e5f73b18">
-         <include file="..\..\..\cmsis\core_cm4.h"/>
-         <include file="..\..\..\cmsis_boot\system_stm32f4xx.h"/>
-         <include file="..\..\..\cmsis_boot\stm32f4xx_conf.h"/>
       </source>
       <source file="..\..\..\emWin\inc\RADIO.h" lastModified="14271a9d990">
          <include file="..\..\..\emWin\inc\WM.h"/>
@@ -117,8 +105,6 @@
          <include file="..\..\..\cmsis_lib\include\stm32f4xx_gpio.h"/>
          <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
          <include file="..\..\..\cmsis_lib\include\stm32f4xx_i2c.h"/>
-      </source>
-      <source file="..\..\..\math.h" lastModified="13b7679f3d0">
       </source>
       <source file="..\..\..\emWin\ub\stm32_ub_spi5.c" lastModified="142035d1060">
          <include file="..\..\..\emWin\ub\stm32_ub_spi5.h"/>
@@ -182,8 +168,6 @@
          <include file="..\..\..\emWin\inc\WM_GUI.h"/>
          <include file="..\..\..\emWin\inc\GUI.h"/>
       </source>
-      <source file="..\..\..\cmsis\core_cmInstr.h" lastModified="1412c148bb0">
-      </source>
       <source file="..\..\..\cmsis_boot\system_stm32f4xx.c" lastModified="141e5f775b0">
          <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
       </source>
@@ -205,9 +189,6 @@
          <include file="..\..\..\emWin\inc\WM.h"/>
          <include file="..\..\..\emWin\inc\DIALOG_Intern.h"/>
          <include file="..\..\..\emWin\inc\WIDGET.h"/>
-      </source>
-      <source file="..\..\..\emWin\inc\GUI_Debug.h" lastModified="14271a9dd78">
-         <include file="..\..\..\emWin\inc\GUI.h"/>
       </source>
       <source file="..\..\..\emWin\ub\stm32_ub_touch_stmpe811.c" lastModified="1421d332b50">
          <include file="..\..\..\emWin\ub\stm32_ub_touch_stmpe811.h"/>
@@ -246,16 +227,8 @@
          <include file="..\..\..\emWin\ub\stm32_ub_lcd_ili9341.h"/>
          <include file="..\..\..\emWin\inc\BUTTON.h"/>
       </source>
-      <source file="..\..\..\cmsis\core_cmFunc.h" lastModified="1412c148bb0">
-      </source>
       <source file="..\..\..\emWin\stm32_ub_stemwin.c" lastModified="1430bb98440">
          <include file="..\..\..\emWin\stm32_ub_stemwin.h"/>
-      </source>
-      <source file="..\..\..\cmsis_boot\stm32f4xx_conf.h" lastModified="141d58dff78">
-         <include file="..\..\..\cmsis_lib\include\stm32f4xx_gpio.h"/>
-         <include file="..\..\..\cmsis_lib\include\stm32f4xx_i2c.h"/>
-         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
-         <include file="..\..\..\cmsis_lib\include\stm32f4xx_spi.h"/>
       </source>
       <source file="..\..\..\emWin\inc\BUTTON.h" lastModified="14271a9d990">
          <include file="..\..\..\emWin\inc\WM.h"/>
@@ -301,8 +274,6 @@
       <source file="..\..\..\cmsis_lib\source\stm32f4xx_gpio.c" lastModified="1412fa6baf0">
          <include file="..\..\..\cmsis_lib\include\stm32f4xx_gpio.h"/>
          <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
-      </source>
-      <source file="..\..\..\cmsis\core_cm4_simd.h" lastModified="1412c148bb0">
       </source>
       <source file="..\..\..\emWin\inc\LISTVIEW.h" lastModified="14271a9d990">
          <include file="..\..\..\emWin\inc\WM.h"/>
@@ -351,23 +322,23 @@
          <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
          <include file="..\..\..\emWin\stm32_ub_stemwin.h"/>
       </source>
+      <source file="..\..\..\emWin\inc\CHOOSECOLOR.h" lastModified="14271a9d990">
+         <include file="..\..\..\emWin\inc\WM.h"/>
+      </source>
       <source file="..\..\..\main.c" lastModified="146d9a829b5">
          <include file="..\..\..\main.h"/>
          <include file="..\..\..\math.h"/>
       </source>
-      <source file="..\..\..\emWin\inc\CHOOSECOLOR.h" lastModified="14271a9d990">
-         <include file="..\..\..\emWin\inc\WM.h"/>
-      </source>
       <source file="..\..\..\cmsis_lib\include\stm32f4xx_fmc.h" lastModified="1412fa6c2c0">
          <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\emWin\inc\LCD_Protected.h" lastModified="14271a9d990">
+         <include file="..\..\..\emWin\inc\LCD.h"/>
       </source>
       <source file="..\..\..\emWin\inc\CHECKBOX.h" lastModified="14271a9d990">
          <include file="..\..\..\emWin\inc\WM.h"/>
          <include file="..\..\..\emWin\inc\DIALOG_Intern.h"/>
          <include file="..\..\..\emWin\inc\WIDGET.h"/>
-      </source>
-      <source file="..\..\..\emWin\inc\LCD_Protected.h" lastModified="14271a9d990">
-         <include file="..\..\..\emWin\inc\LCD.h"/>
       </source>
       <source file="..\..\..\emWin\inc\Global.h" lastModified="14271a9d990">
       </source>
@@ -380,6 +351,263 @@
          <include file="..\..\..\emWin\inc\WM.h"/>
          <include file="..\..\..\emWin\inc\DIALOG_Intern.h"/>
          <include file="..\..\..\emWin\inc\WIDGET.h"/>
+      </source>
+   </includePath>
+   <includePath signature="/ID:\My Documents /ID:\My Documents\GitHub\ECG_STM32F429\cmsis /ID:\My Documents\GitHub\ECG_STM32F429\emWin /ID:\My Documents\GitHub\ECG_STM32F429\cmsis_boot /ID:\My Documents\GitHub\ECG_STM32F429 /ID:\My Documents\GitHub\ECG_STM32F429\emWin\config /ID:\My Documents\GitHub\ECG_STM32F429\cmsis_lib\include /ID:\My Documents\GitHub\ECG_STM32F429\emWin\ub /ID:\My Documents\GitHub\ECG_STM32F429\emWin\st /ID:\My Documents\GitHub /ID:\My Documents\GitHub\ECG_STM32F429\emWin\inc /ID:\My Documents\GitHub\ECG_STM32F429\cmsis_lib">
+      <source file="..\..\..\emWin\ub\stm32_ub_adc1_single.h" lastModified="14208ba6a80">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_gpio.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_adc.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\source\stm32f4xx_ltdc.c" lastModified="1423985a86a">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_ltdc.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\emWin\ub\stm32_ub_adc1_single.c" lastModified="14208b0bdf0">
+         <include file="..\..\..\emWin\ub\stm32_ub_adc1_single.h"/>
+      </source>
+      <source file="..\..\..\emWin\inc\GUI_Private.h" lastModified="14271a9d990">
+         <include file="..\..\..\emWin\inc\GUI.h"/>
+         <include file="..\..\..\emWin\inc\LCD_Protected.h"/>
+         <include file="..\..\..\emWin\inc\GUI_Debug.h"/>
+         <include file="..\..\..\emWin\inc\WM_GUI.h"/>
+      </source>
+      <source file="..\..\..\emWin\inc\GUIDRV_Lin.h" lastModified="14271a9d990">
+      </source>
+      <source file="..\..\..\emWin\inc\WIDGET.h" lastModified="14271a9d990">
+         <include file="..\..\..\emWin\inc\WM_Intern.h"/>
+         <include file="..\..\..\emWin\inc\SCROLLBAR.h"/>
+      </source>
+      <source file="..\..\..\emWin\config\global_includes.h" lastModified="142d86837d0">
+         <include file="..\..\..\emWin\ub\stm32_ub_lcd_ili9341.h"/>
+         <include file="..\..\..\emWin\ub\stm32_ub_sdram.h"/>
+         <include file="..\..\..\emWin\ub\stm32_ub_touch_stmpe811.h"/>
+         <include file="..\..\..\emWin\inc\GUI.h"/>
+      </source>
+      <source file="..\..\..\cmsis\core_cm4.h" lastModified="1412c1487c8">
+         <include file="..\..\..\cmsis\core_cmInstr.h"/>
+         <include file="..\..\..\cmsis\core_cmFunc.h"/>
+         <include file="..\..\..\cmsis\core_cm4_simd.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\source\stm32f4xx_i2c.c" lastModified="1423985a83c">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_i2c.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_ltdc.h" lastModified="14239854a4e">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\emWin\ub\stm32_ub_led.h" lastModified="141d00f0fb0">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_gpio.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\emWin\inc\DIALOG_Intern.h" lastModified="14271a9d990">
+         <include file="..\..\..\emWin\inc\WM.h"/>
+      </source>
+      <source file="..\..\..\emWin\ub\stm32_ub_led.c" lastModified="141eb0c16a0">
+         <include file="..\..\..\emWin\ub\stm32_ub_led.h"/>
+      </source>
+      <source file="..\..\..\emWin\inc\LCD.h" lastModified="14271a9d990">
+         <include file="..\..\..\emWin\inc\GUI_ConfDefaults.h"/>
+         <include file="..\..\..\emWin\inc\Global.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\source\stm32f4xx_fmc.c" lastModified="1423985a780">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_fmc.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\source\stm32f4xx_dma2d.c" lastModified="1412fa6baf0">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_dma2d.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\emWin\st\stm32xxx_it.c" lastModified="14306b02620">
+         <include file="..\..\..\emWin\config\global_includes.h"/>
+         <include file="..\..\..\emWin\stm32_ub_stemwin.h"/>
+      </source>
+      <source file="..\..\..\syscalls.c" lastModified="1423377d280">
+      </source>
+      <source file="..\..\..\emWin\ub\stm32_ub_lcd_ili9341.h" lastModified="14241cbb310">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_gpio.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_spi.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_ltdc.h"/>
+         <include file="..\..\..\emWin\ub\stm32_ub_spi5.h"/>
+         <include file="..\..\..\emWin\ub\stm32_ub_sdram.h"/>
+      </source>
+      <source file="..\..\..\cmsis_boot\stm32f4xx.h" lastModified="141e5f73b18">
+         <include file="..\..\..\cmsis\core_cm4.h"/>
+         <include file="..\..\..\cmsis_boot\system_stm32f4xx.h"/>
+         <include file="..\..\..\cmsis_boot\stm32f4xx_conf.h"/>
+      </source>
+      <source file="..\..\..\emWin\ub\stm32_ub_lcd_ili9341.c" lastModified="14241e0c980">
+         <include file="..\..\..\emWin\ub\stm32_ub_lcd_ili9341.h"/>
+      </source>
+      <source file="..\..\..\emWin\inc\WM_GUI.h" lastModified="14271a9d990">
+      </source>
+      <source file="..\..\..\emWin\ub\stm32_ub_spi5.h" lastModified="141dfa80300">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_gpio.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_spi.h"/>
+      </source>
+      <source file="..\..\..\emWin\ub\stm32_ub_i2c3.h" lastModified="145fa26cf9e">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_gpio.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_i2c.h"/>
+      </source>
+      <source file="..\..\..\emWin\ub\stm32_ub_spi5.c" lastModified="142035d1060">
+         <include file="..\..\..\emWin\ub\stm32_ub_spi5.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_spi.h" lastModified="14239854b09">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\emWin\ub\stm32_ub_i2c3.c" lastModified="145fa27de44">
+         <include file="..\..\..\emWin\ub\stm32_ub_i2c3.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h" lastModified="1412fa6c2c0">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\cmsis_boot\system_stm32f4xx.h" lastModified="1412fa6ab50">
+      </source>
+      <source file="..\..\..\emWin\inc\WM.h" lastModified="14271a9d990">
+         <include file="..\..\..\emWin\inc\GUI_ConfDefaults.h"/>
+         <include file="..\..\..\emWin\inc\GUI_Type.h"/>
+         <include file="..\..\..\emWin\inc\WM_GUI.h"/>
+         <include file="..\..\..\emWin\inc\GUI.h"/>
+      </source>
+      <source file="..\..\..\cmsis\core_cmInstr.h" lastModified="1412c148bb0">
+      </source>
+      <source file="..\..\..\cmsis_boot\system_stm32f4xx.c" lastModified="141e5f775b0">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\emWin\inc\GUI.h" lastModified="14271a9d990">
+         <include file="..\..\..\emWin\inc\GUI_ConfDefaults.h"/>
+         <include file="..\..\..\emWin\inc\GUI_Type.h"/>
+         <include file="..\..\..\emWin\inc\GUI_Version.h"/>
+      </source>
+      <source file="..\..\..\emWin\ub\stm32_ub_touch_stmpe811.h" lastModified="1421d3369d0">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+         <include file="..\..\..\emWin\ub\stm32_ub_i2c3.h"/>
+      </source>
+      <source file="..\..\..\emWin\inc\SCROLLBAR.h" lastModified="14271a9d990">
+         <include file="..\..\..\emWin\inc\WM.h"/>
+         <include file="..\..\..\emWin\inc\DIALOG_Intern.h"/>
+         <include file="..\..\..\emWin\inc\WIDGET.h"/>
+      </source>
+      <source file="..\..\..\emWin\inc\GUI_Debug.h" lastModified="14271a9dd78">
+         <include file="..\..\..\emWin\inc\GUI.h"/>
+      </source>
+      <source file="..\..\..\emWin\ub\stm32_ub_touch_stmpe811.c" lastModified="1421d332b50">
+         <include file="..\..\..\emWin\ub\stm32_ub_touch_stmpe811.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_dma2d.h" lastModified="1412fa6c2c0">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\emWin\config\GUIDRV_stm32f429i_discovery.c" lastModified="143068c7950">
+         <include file="..\..\..\emWin\inc\GUI.h"/>
+         <include file="..\..\..\emWin\inc\GUI_Private.h"/>
+         <include file="..\..\..\emWin\inc\GUIDRV_Lin.h"/>
+         <include file="..\..\..\emWin\config\global_includes.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_dma2d.h"/>
+      </source>
+      <source file="..\..\..\emWin\inc\WM_Intern.h" lastModified="14271a9d990">
+         <include file="..\..\..\emWin\inc\WM.h"/>
+         <include file="..\..\..\emWin\inc\GUI_Private.h"/>
+      </source>
+      <source file="..\..\..\emWin\inc\GUI_Type.h" lastModified="14271a9d990">
+         <include file="..\..\..\emWin\inc\LCD.h"/>
+         <include file="..\..\..\emWin\config\GUIConf.h"/>
+      </source>
+      <source file="..\..\..\emWin\stm32_ub_stemwin.h" lastModified="143069e3460">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+         <include file="..\..\..\emWin\inc\GUI.h"/>
+         <include file="..\..\..\emWin\ub\stm32_ub_touch_stmpe811.h"/>
+         <include file="..\..\..\emWin\ub\stm32_ub_lcd_ili9341.h"/>
+         <include file="..\..\..\emWin\inc\BUTTON.h"/>
+      </source>
+      <source file="..\..\..\cmsis\core_cmFunc.h" lastModified="1412c148bb0">
+      </source>
+      <source file="..\..\..\emWin\stm32_ub_stemwin.c" lastModified="1430bb98440">
+         <include file="..\..\..\emWin\stm32_ub_stemwin.h"/>
+      </source>
+      <source file="..\..\..\cmsis_boot\stm32f4xx_conf.h" lastModified="141d58dff78">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_gpio.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_i2c.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_spi.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_adc.h" lastModified="1412fa6c2c0">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\emWin\inc\BUTTON.h" lastModified="14271a9d990">
+         <include file="..\..\..\emWin\inc\WM.h"/>
+         <include file="..\..\..\emWin\inc\DIALOG_Intern.h"/>
+         <include file="..\..\..\emWin\inc\WIDGET.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\source\stm32f4xx_spi.c" lastModified="1423985a984">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_spi.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\emWin\config\GUIConf.h" lastModified="1413c4f54b0">
+      </source>
+      <source file="..\..\..\emWin\ub\stm32_ub_sdram.h" lastModified="141eb2a6470">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_gpio.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_fmc.h"/>
+      </source>
+      <source file="..\..\..\emWin\config\GUIConf.c" lastModified="1430bb6dc90">
+         <include file="..\..\..\emWin\inc\GUI.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\source\stm32f4xx_rcc.c" lastModified="1412fa6baf0">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\emWin\inc\GUI_ConfDefaults.h" lastModified="14271a9d990">
+         <include file="..\..\..\emWin\config\GUIConf.h"/>
+      </source>
+      <source file="..\..\..\emWin\os\GUI_X.c" lastModified="14271a9b280">
+         <include file="..\..\..\emWin\inc\GUI.h"/>
+      </source>
+      <source file="..\..\..\emWin\ub\stm32_ub_sdram.c" lastModified="141eb2a6470">
+         <include file="..\..\..\emWin\ub\stm32_ub_sdram.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\source\stm32f4xx_gpio.c" lastModified="1412fa6baf0">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_gpio.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\cmsis\core_cm4_simd.h" lastModified="1412c148bb0">
+      </source>
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_i2c.h" lastModified="1412fa6c2c0">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\emWin\inc\GUI_Version.h" lastModified="14271a9d990">
+      </source>
+      <source file="..\..\..\cmsis_boot\startup\startup_stm32f4xx.c" lastModified="141f8c20980">
+      </source>
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_gpio.h" lastModified="1412fa6c2c0">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\main.h" lastModified="146d9a20160">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+         <include file="..\..\..\emWin\stm32_ub_stemwin.h"/>
+      </source>
+      <source file="..\..\..\main.c" lastModified="146d9a82d9d">
+         <include file="..\..\..\main.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\source\stm32f4xx_adc.c" lastModified="1412fa6baf0">
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_adc.h"/>
+         <include file="..\..\..\cmsis_lib\include\stm32f4xx_rcc.h"/>
+      </source>
+      <source file="..\..\..\cmsis_lib\include\stm32f4xx_fmc.h" lastModified="1412fa6c2c0">
+         <include file="..\..\..\cmsis_boot\stm32f4xx.h"/>
+      </source>
+      <source file="..\..\..\emWin\inc\LCD_Protected.h" lastModified="14271a9d990">
+         <include file="..\..\..\emWin\inc\LCD.h"/>
+      </source>
+      <source file="..\..\..\emWin\inc\Global.h" lastModified="14271a9d990">
       </source>
    </includePath>
 </dependencies>
