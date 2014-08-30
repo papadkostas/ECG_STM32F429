@@ -7,3 +7,4 @@ RG=1.01KOhm
 R(+)=47Kohm
 R(-)=47Kohm
 
+![Alt text](image.jpg "Optional title")
