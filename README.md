@@ -7,4 +7,3 @@ RG=1.01KOhm
 R(+)=47Kohm
 R(-)=47Kohm
 
-![Alt text](http://s17.postimg.org/u7wajejm6/IMG_20140829_144627.jpg "Optional title")
