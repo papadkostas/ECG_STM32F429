@@ -261,8 +261,8 @@
     <File name="emWin/inc/GUI_GIF_Private.h" path="emWin/inc/GUI_GIF_Private.h" type="1"/>
     <File name=".git/objects/24/d9489f28eb26df67b2aec44b271413636b6026" path=".git/objects/24/d9489f28eb26df67b2aec44b271413636b6026" type="1"/>
     <File name="emWin/inc/EDIT.h" path="emWin/inc/EDIT.h" type="1"/>
-    <File name=".git/objects/69/f7928d88092697d17ac00966bed4d21a7c62de" path=".git/objects/69/f7928d88092697d17ac00966bed4d21a7c62de" type="1"/>
     <File name=".git/objects/a6" path="" type="2"/>
+    <File name=".git/objects/69/f7928d88092697d17ac00966bed4d21a7c62de" path=".git/objects/69/f7928d88092697d17ac00966bed4d21a7c62de" type="1"/>
     <File name="cmsis_boot/stm32f4xx.h" path="cmsis_boot/stm32f4xx.h" type="1"/>
     <File name="cmsis_lib/source/stm32f4xx_spi.c" path="cmsis_lib/source/stm32f4xx_spi.c" type="1"/>
     <File name="emWin/inc/PROGBAR.h" path="emWin/inc/PROGBAR.h" type="1"/>
@@ -276,16 +276,16 @@
     <File name=".git/objects/0c/1389d0c4b07005a276eca05e6713a5685cca56" path=".git/objects/0c/1389d0c4b07005a276eca05e6713a5685cca56" type="1"/>
     <File name=".git/objects/79" path="" type="2"/>
     <File name=".git/objects/97" path="" type="2"/>
-    <File name=".git/logs" path="" type="2"/>
     <File name=".git/objects/05/6012b2c75fa699d718199b04d7bd4b1958a194" path=".git/objects/05/6012b2c75fa699d718199b04d7bd4b1958a194" type="1"/>
+    <File name=".git/logs" path="" type="2"/>
     <File name="emWin/inc/TEXT_Private.h" path="emWin/inc/TEXT_Private.h" type="1"/>
     <File name="cmsis_lib/include/stm32f4xx_rcc.h" path="cmsis_lib/include/stm32f4xx_rcc.h" type="1"/>
     <File name=".git/objects/78" path="" type="2"/>
     <File name=".git/objects/65/65e65df12bc66d57df82833c1f8abc12fdf4e0" path=".git/objects/65/65e65df12bc66d57df82833c1f8abc12fdf4e0" type="1"/>
     <File name="emWin/inc/LCD_SIM.h" path="emWin/inc/LCD_SIM.h" type="1"/>
     <File name="emWin/inc/GUI_SPRITE_Private.h" path="emWin/inc/GUI_SPRITE_Private.h" type="1"/>
-    <File name="emWin/inc/GUIDRV_FlexColor.h" path="emWin/inc/GUIDRV_FlexColor.h" type="1"/>
     <File name=".git" path="" type="2"/>
+    <File name="emWin/inc/GUIDRV_FlexColor.h" path="emWin/inc/GUIDRV_FlexColor.h" type="1"/>
     <File name=".git/objects/55/147cdb54cfd509ce8b2441011a0c678d80ae11" path=".git/objects/55/147cdb54cfd509ce8b2441011a0c678d80ae11" type="1"/>
     <File name="cmsis_boot/startup/startup_stm32f4xx.c" path="cmsis_boot/startup/startup_stm32f4xx.c" type="1"/>
     <File name="emWin/os/GUI_X.c" path="emWin/os/GUI_X.c" type="1"/>
@@ -337,8 +337,8 @@
     <File name="emWin/ub/stm32_ub_i2c3.c" path="emWin/ub/stm32_ub_i2c3.c" type="1"/>
     <File name="emWin/ub/stm32_ub_lcd_ili9341.c" path="emWin/ub/stm32_ub_lcd_ili9341.c" type="1"/>
     <File name=".git/objects/4d/0566ddbf5022ebf4a2454398b2e1581b33f7ae" path=".git/objects/4d/0566ddbf5022ebf4a2454398b2e1581b33f7ae" type="1"/>
-    <File name=".git/objects/9a" path="" type="2"/>
     <File name=".git/objects/1d" path="" type="2"/>
+    <File name=".git/objects/9a" path="" type="2"/>
     <File name="emWin/inc/GUI_Debug.h" path="emWin/inc/GUI_Debug.h" type="1"/>
     <File name=".git/hooks/README.sample" path=".git/hooks/README.sample" type="1"/>
     <File name=".git/objects/ac/ac0ba76781a4370d0a222142e59c73b6ce0064" path=".git/objects/ac/ac0ba76781a4370d0a222142e59c73b6ce0064" type="1"/>
@@ -347,8 +347,8 @@
     <File name="emWin/config/GUIDRV_stm32f429i_discovery.c" path="emWin/config/GUIDRV_stm32f429i_discovery.c" type="1"/>
     <File name="emWin/config/GUIConf.c" path="emWin/config/GUIConf.c" type="1"/>
     <File name=".git/objects/43/87b3d9c7dfc4aad983ceeacbbd17f45192a93f" path=".git/objects/43/87b3d9c7dfc4aad983ceeacbbd17f45192a93f" type="1"/>
-    <File name="emWin/config" path="" type="2"/>
     <File name="cmsis_boot/startup" path="" type="2"/>
+    <File name="emWin/config" path="" type="2"/>
     <File name=".git/objects/9b" path="" type="2"/>
     <File name=".git/config" path=".git/config" type="1"/>
     <File name="emWin/inc/GRAPH.h" path="emWin/inc/GRAPH.h" type="1"/>

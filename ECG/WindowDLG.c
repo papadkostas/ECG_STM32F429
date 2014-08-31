@@ -52,7 +52,7 @@ static GRAPH_SCALE_Handle _hScaleH;   // Handle of horizontal scale
 
 static I16 _aValue[3];
 static int _Stop = 0;
-
+static float DIVIDER;
 static GUI_COLOR _aColor[] = {GUI_RED, GUI_GREEN, GUI_LIGHTBLUE}; // Array of colors for the GRAPH_DATA objects
 
 //
@@ -95,7 +95,7 @@ static const GUI_WIDGET_CREATE_INFO _aDialogCreate[] = {
 *   and adds them to the GRAPH_DATA objects
 */
 static void _AddValues(void) {
-	_aValue[1]=UB_ADC1_SINGLE_Read(ADC_PA5)/10;
+	_aValue[1]=UB_ADC1_SINGLE_Read(ADC_PA5)/DIVIDER;
 	GRAPH_DATA_YT_AddValue(_ahData[1], _aValue[1]);
 }
 
@@ -141,8 +141,10 @@ static void _ForEach(WM_HWIN hWin, void * pData) {
     return;
   }
   if (FullScreenMode) {
+	DIVIDER=13.9;
     WM_HideWindow(hWin);
   } else {
+	DIVIDER=27;
     WM_ShowWindow(hWin);
   }
 }
@@ -413,6 +415,7 @@ void MainTask(void) {
   WM_HWIN hGraph;
   UB_ADC1_SINGLE_Init();
   hGraph = 0;
+  DIVIDER = 20;
   GUI_Init();
   GUI_CURSOR_Show();
   WM_SetDesktopColor(GUI_BLACK);

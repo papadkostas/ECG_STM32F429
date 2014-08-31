@@ -22,7 +22,7 @@
 </editorArea>
 <editor activePart="true" focus="true" id="org.eclipse.cdt.ui.editor.CEditor" name="WindowDLG.c" partName="WindowDLG.c" path="D:/My Documents/GitHub/ECG_STM32F429/ECG/WindowDLG.c" title="WindowDLG.c" tooltip="D:/My Documents/GitHub/ECG_STM32F429/ECG/WindowDLG.c" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/stm32f429/ECG/WindowDLG.c"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1932" selectionTopPixel="1350"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1829" selectionTopPixel="450"/>
 </editor>
 </editors>
 <views>
@@ -30,8 +30,12 @@
 <viewState CommonNavigator.LINKING_ENABLED="0" horizontalPosition="0" org.eclipse.ui.navigator.resources.workingSets.showTopLevelWorkingSets="0" verticalPosition="0">
 <expanded>
 <element path="/stm32f429"/>
+<element path="/stm32f429/ECG"/>
 <element path="/stm32f429/emWin"/>
 </expanded>
+<selection>
+<element path="/stm32f429/ECG/WindowDLG.c"/>
+</selection>
 </viewState>
 </view>
 <view id="org.eclipse.debug.ui.DebugView" partName="Debug">
@@ -258,87 +262,28 @@
 <workingSets/>
 <navigationHistory>
 <editors>
-<editor factoryID="org.coocox.builder.ui.persistent.PersistentElementFactory" id="org.coocox.builder.ui.editors.ConfigEditor">
-<org.coocox.builder.ui.editors.ConfigEditor/>
-</editor>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/stm32f429/ECG/WindowDLG.c"/>
-<editor factoryID="org.eclipse.cdt.ui.ExternalEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="D:\My Documents\GitHub\ECG_STM32F429\emWin\inc\GRAPH.h" project="stm32f429"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/stm32f429/emWin/inc/GRAPH.h"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" path="/stm32f429/emWin/ub/stm32_ub_adc1_single.c"/>
 </editors>
-<item historyLabel="Configuration" index="0"/>
-<item historyLabel="WindowDLG.c" index="1">
+<item historyLabel="WindowDLG.c" index="0">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="WindowDLG.c" index="1">
+<item historyLabel="WindowDLG.c" index="0">
+<position info="not_deleted" x="6213" y="0"/>
+</item>
+<item historyLabel="WindowDLG.c" index="0">
+<position info="not_deleted" x="5557" y="92"/>
+</item>
+<item historyLabel="WindowDLG.c" index="0">
 <position/>
 </item>
-<item historyLabel="Configuration" index="0"/>
-<item historyLabel="WindowDLG.c" index="1">
-<position info="not_deleted" x="3180" y="0"/>
+<item historyLabel="WindowDLG.c" index="0">
+<position info="not_deleted" x="5557" y="92"/>
 </item>
-<item historyLabel="WindowDLG.c" index="1">
-<position info="not_deleted" x="15507" y="0"/>
-</item>
-<item historyLabel="WindowDLG.c" index="1">
+<item historyLabel="WindowDLG.c" index="0">
 <position/>
 </item>
-<item historyLabel="WindowDLG.c" index="1">
-<position info="not_deleted" x="4788" y="0"/>
-</item>
-<item historyLabel="WindowDLG.c" index="1">
-<position info="not_deleted" x="4815" y="0"/>
-</item>
-<item historyLabel="WindowDLG.c" index="1">
-<position info="not_deleted" x="2244" y="0"/>
-</item>
-<item historyLabel="WindowDLG.c" index="1">
-<position info="not_deleted" x="2246" y="23"/>
-</item>
-<item historyLabel="WindowDLG.c" index="1">
-<position info="not_deleted" x="4821" y="50"/>
-</item>
-<item historyLabel="GRAPH.h" index="2">
-<position/>
-</item>
-<item historyLabel="GRAPH.h" index="3">
-<position info="not_deleted" x="4357" y="17"/>
-</item>
-<item historyLabel="GRAPH.h" index="2">
-<position/>
-</item>
-<item historyLabel="GRAPH.h" index="3">
-<position info="not_deleted" x="3832" y="0"/>
-</item>
-<item historyLabel="WindowDLG.c" index="1">
-<position info="not_deleted" x="2049" y="0"/>
-</item>
-<item historyLabel="WindowDLG.c" index="1">
-<position info="not_deleted" x="4866" y="0"/>
-</item>
-<item historyLabel="WindowDLG.c" index="1">
-<position info="not_deleted" x="2266" y="7"/>
-</item>
-<item historyLabel="WindowDLG.c" index="1">
-<position info="not_deleted" x="15036" y="0"/>
-</item>
-<item historyLabel="WindowDLG.c" index="1">
-<position info="not_deleted" x="4843" y="0"/>
-</item>
-<item historyLabel="GRAPH.h" index="2">
-<position info="not_deleted" x="8457" y="0"/>
-</item>
-<item historyLabel="WindowDLG.c" index="1">
-<position info="not_deleted" x="4843" y="0"/>
-</item>
-<item historyLabel="WindowDLG.c" index="1">
-<position/>
-</item>
-<item historyLabel="stm32_ub_adc1_single.c" index="4">
-<position info="not_deleted" x="3793" y="0"/>
-</item>
-<item active="true" historyLabel="WindowDLG.c" index="1">
-<position/>
+<item active="true" historyLabel="WindowDLG.c" index="0">
+<position info="not_deleted" x="5557" y="92"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -347,50 +292,51 @@
 <actionBarAdvisor/>
 </window>
 <mruList>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32_ub_adc1_single.c" tooltip="stm32f429/emWin/ub/stm32_ub_adc1_single.c">
-<persistable path="/stm32f429/emWin/ub/stm32_ub_adc1_single.c"/>
+<file factoryID="org.coocox.component.ui.editors.repository.RepositoryElementFactory" id="org.coocox.builder.ui.editors.repository.RepositoryBrowser" name="Repository" tooltip="Repository">
+<persistable>&#x0A;<subPage/>
+</persistable>
 </file>
-<file factoryID="org.eclipse.cdt.ui.ExternalEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="GRAPH.h" tooltip="D:\My Documents\GitHub\ECG_STM32F429\emWin\inc\GRAPH.h">
-<persistable path="D:\My Documents\GitHub\ECG_STM32F429\emWin\inc\GRAPH.h" project="stm32f429"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f4xx_usart.h" tooltip="stm32f429/cmsis_lib/include/stm32f4xx_usart.h">
+<persistable path="/stm32f429/cmsis_lib/include/stm32f4xx_usart.h"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="GRAPH.h" tooltip="stm32f429/emWin/inc/GRAPH.h">
-<persistable path="/stm32f429/emWin/inc/GRAPH.h"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32_ub_uart.c" tooltip="stm32f429/ub_lib/stm32_ub_uart.c">
+<persistable path="/stm32f429/ub_lib/stm32_ub_uart.c"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="GUIDEMO_Graph.c" tooltip="stm32f429/ub_lib/emWin_demo/GUIDEMO_Graph.c">
-<persistable path="/stm32f429/ub_lib/emWin_demo/GUIDEMO_Graph.c"/>
+<file factoryID="org.eclipse.cdt.ui.ExternalEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="main.h" tooltip="D:\My Documents\Desktop\STM32F429ZI\Libraries\UB Lib\uart\Demo_F429_12\main.h">
+<persistable path="D:\My Documents\Desktop\STM32F429ZI\Libraries\UB Lib\uart\Demo_F429_12\main.h" project="stm32f429"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32_ub_adc1_single.h" tooltip="stm32f429/emWin/ub/stm32_ub_adc1_single.h">
-<persistable path="/stm32f429/emWin/ub/stm32_ub_adc1_single.h"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32_ub_uart.h" tooltip="stm32f429/ub_lib/stm32_ub_uart.h">
+<persistable path="/stm32f429/ub_lib/stm32_ub_uart.h"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32_ub_i2c3.c" tooltip="stm32f429/emWin/ub/stm32_ub_i2c3.c">
-<persistable path="/stm32f429/emWin/ub/stm32_ub_i2c3.c"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="WindowDLG.c" tooltip="stm32f429/ECG/WindowDLG.c">
+<persistable path="/stm32f429/ECG/WindowDLG.c"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32_ub_touch_stmpe811.c" tooltip="stm32f429/emWin/ub/stm32_ub_touch_stmpe811.c">
-<persistable path="/stm32f429/emWin/ub/stm32_ub_touch_stmpe811.c"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="BH1750.h" tooltip="stm32f429/BH1750/BH1750.h">
-<persistable path="/stm32f429/BH1750/BH1750.h"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32_ub_i2c3.h" tooltip="stm32f429/emWin/ub/stm32_ub_i2c3.h">
-<persistable path="/stm32f429/emWin/ub/stm32_ub_i2c3.h"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="BH1750.c" tooltip="stm32f429/BH1750/BH1750.c">
-<persistable path="/stm32f429/BH1750/BH1750.c"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32_ub_i2c3.c" tooltip="stm32f429/ub_lib/stm32_ub_i2c3.c">
-<persistable path="/stm32f429/ub_lib/stm32_ub_i2c3.c"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="main.h" tooltip="stm32f429/main.h">
+<persistable path="/stm32f429/main.h"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="main.c" tooltip="stm32f429/main.c">
 <persistable path="/stm32f429/main.c"/>
 </file>
-<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.eclipse.ui.systemExternalEditor" name="stm32f429.coproj" tooltip="D:\My Documents\GitHub\BH1750_UB\stm32f429.coproj">
-<persistable uri="file:/D:/My%20Documents/GitHub/BH1750_UB/stm32f429.coproj"/>
+<file factoryID="org.eclipse.cdt.ui.ExternalEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="string.h" tooltip="C:\Program Files (x86)\GNU Tools ARM Embedded\4.7 2012q4\arm-none-eabi\include\string.h">
+<persistable path="C:\Program Files (x86)\GNU Tools ARM Embedded\4.7 2012q4\arm-none-eabi\include\string.h" project="stm32f429"/>
 </file>
-<file factoryID="org.eclipse.ui.ide.FileStoreEditorInputFactory" id="org.eclipse.ui.systemExternalEditor" name="stm32f429.coproj" tooltip="D:\My Documents\GitHub\ECG_STM32F429\stm32f429.coproj">
-<persistable uri="file:/D:/My%20Documents/GitHub/ECG_STM32F429/stm32f429.coproj"/>
+<file factoryID="org.eclipse.cdt.ui.ExternalEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="dht22.h" tooltip="D:\My Documents\Desktop\DefaultProject\dht22.h">
+<persistable path="D:\My Documents\Desktop\DefaultProject\dht22.h" project="stm32f429"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="WindowDLG.c" tooltip="stm32f429/ECG/WindowDLG.c">
-<persistable path="/stm32f429/ECG/WindowDLG.c"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="libstm32f4.a" tooltip="stm32f429/cmsis_lib/libstm32f4.a">
+<persistable path="/stm32f429/cmsis_lib/libstm32f4.a"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="ub_font_arial_7x10.c" tooltip="stm32f429/ub_lib/font/ub_font_arial_7x10.c">
+<persistable path="/stm32f429/ub_lib/font/ub_font_arial_7x10.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="Makefile" tooltip="stm32f429/Makefile">
+<persistable path="/stm32f429/Makefile"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="system_stm32f4xx.c" tooltip="stm32f429/cmsis_boot/system_stm32f4xx.c">
+<persistable path="/stm32f429/cmsis_boot/system_stm32f4xx.c"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.cdt.ui.editor.CEditor" name="stm32f429i_discovery_lcd.h" tooltip="stm32f429/STM32F429I-Discovery/stm32f429i_discovery_lcd.h">
+<persistable path="/stm32f429/STM32F429I-Discovery/stm32f429i_discovery_lcd.h"/>
 </file>
 </mruList>
 </workbench>
