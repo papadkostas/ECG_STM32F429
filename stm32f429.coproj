@@ -55,7 +55,7 @@
     <DebugOption>
       <Option name="org.coocox.codebugger.gdbjtag.core.adapter" value="ST-Link"/>
       <Option name="org.coocox.codebugger.gdbjtag.core.debugMode" value="SWD"/>
-      <Option name="org.coocox.codebugger.gdbjtag.core.clockDiv" value="1M"/>
+      <Option name="org.coocox.codebugger.gdbjtag.core.clockDiv" value="2M"/>
       <Option name="org.coocox.codebugger.gdbjtag.corerunToMain" value="1"/>
       <Option name="org.coocox.codebugger.gdbjtag.core.jlinkgdbserver" value=""/>
       <Option name="org.coocox.codebugger.gdbjtag.core.userDefineGDBScript" value=""/>
@@ -92,15 +92,15 @@
     <File name="cmsis/core_cm4_simd.h" path="cmsis/core_cm4_simd.h" type="1"/>
     <File name="cmsis/core_cmFunc.h" path="cmsis/core_cmFunc.h" type="1"/>
     <File name="emWin/inc/GUI_JPEG_Private.h" path="emWin/inc/GUI_JPEG_Private.h" type="1"/>
-    <File name=".git/logs/refs/remotes/origin/master" path=".git/logs/refs/remotes/origin/master" type="1"/>
     <File name=".git/objects/61" path="" type="2"/>
+    <File name=".git/logs/refs/remotes/origin/master" path=".git/logs/refs/remotes/origin/master" type="1"/>
     <File name="emWin/ub/stm32_ub_sdram.h" path="emWin/ub/stm32_ub_sdram.h" type="1"/>
     <File name="main.h" path="main.h" type="1"/>
     <File name=".git/logs/refs/heads/master" path=".git/logs/refs/heads/master" type="1"/>
     <File name=".git/objects/49" path="" type="2"/>
     <File name="emWin/inc/GUI_VNC.h" path="emWin/inc/GUI_VNC.h" type="1"/>
-    <File name=".git/objects/33/f59f6761a1e4af400a1c1dbd663a3925e374e4" path=".git/objects/33/f59f6761a1e4af400a1c1dbd663a3925e374e4" type="1"/>
     <File name="emWin/inc/IMAGE.h" path="emWin/inc/IMAGE.h" type="1"/>
+    <File name=".git/objects/33/f59f6761a1e4af400a1c1dbd663a3925e374e4" path=".git/objects/33/f59f6761a1e4af400a1c1dbd663a3925e374e4" type="1"/>
     <File name="emWin/inc/GUIDRV_TemplateI_Private.h" path="emWin/inc/GUIDRV_TemplateI_Private.h" type="1"/>
     <File name="emWin/ub/stm32_ub_adc1_single.c" path="emWin/ub/stm32_ub_adc1_single.c" type="1"/>
     <File name="emWin/inc/GUI_Type.h" path="emWin/inc/GUI_Type.h" type="1"/>
@@ -126,13 +126,14 @@
     <File name="emWin/inc/LISTWHEEL_Private.h" path="emWin/inc/LISTWHEEL_Private.h" type="1"/>
     <File name=".git/objects/61/6f2a86e4caf6762137c063e5c9b0664bfa8e25" path=".git/objects/61/6f2a86e4caf6762137c063e5c9b0664bfa8e25" type="1"/>
     <File name="emWin/inc/Global.h" path="emWin/inc/Global.h" type="1"/>
+    <File name="cmsis_lib/source/stm32f4xx_pwr.c" path="cmsis_lib/source/stm32f4xx_pwr.c" type="1"/>
     <File name="emWin/inc/GUI_ARRAY_Private.h" path="emWin/inc/GUI_ARRAY_Private.h" type="1"/>
     <File name="ECG" path="" type="2"/>
     <File name=".git/info" path="" type="2"/>
     <File name="emWin/inc/GUIDRV_FlexColor_Private.h" path="emWin/inc/GUIDRV_FlexColor_Private.h" type="1"/>
+    <File name="emWin/inc/DIALOG.h" path="emWin/inc/DIALOG.h" type="1"/>
     <File name=".git/objects/43" path="" type="2"/>
     <File name="emWin/lib_STemWin522_CM4_GCC.a" path="emWin/lib_STemWin522_CM4_GCC.a" type="1"/>
-    <File name="emWin/inc/DIALOG.h" path="emWin/inc/DIALOG.h" type="1"/>
     <File name="emWin/inc/GRAPH_Private.h" path="emWin/inc/GRAPH_Private.h" type="1"/>
     <File name=".git/refs/heads" path="" type="2"/>
     <File name="cmsis_lib/include/stm32f4xx_spi.h" path="cmsis_lib/include/stm32f4xx_spi.h" type="1"/>
@@ -173,11 +174,11 @@
     <File name=".git/refs/remotes" path="" type="2"/>
     <File name=".git/objects/92/fbe036d79e9fb57fbed4f2e1f160ca9f897100" path=".git/objects/92/fbe036d79e9fb57fbed4f2e1f160ca9f897100" type="1"/>
     <File name=".git/objects/f2" path="" type="2"/>
-    <File name=".git/objects/81/42106999d2c0d25932d94b10b0cd0ba26d81ee" path=".git/objects/81/42106999d2c0d25932d94b10b0cd0ba26d81ee" type="1"/>
     <File name="emWin/config/global_includes.h" path="emWin/config/global_includes.h" type="1"/>
+    <File name=".git/objects/81/42106999d2c0d25932d94b10b0cd0ba26d81ee" path=".git/objects/81/42106999d2c0d25932d94b10b0cd0ba26d81ee" type="1"/>
     <File name="emWin" path="" type="2"/>
-    <File name=".git/objects/af" path="" type="2"/>
     <File name="cmsis_boot" path="" type="2"/>
+    <File name=".git/objects/af" path="" type="2"/>
     <File name=".git/objects/31/36c0b3af1b164e66bd1cc91a80595c281d3b03" path=".git/objects/31/36c0b3af1b164e66bd1cc91a80595c281d3b03" type="1"/>
     <File name=".git/objects/d6" path="" type="2"/>
     <File name="cmsis_lib/source/stm32f4xx_ltdc.c" path="cmsis_lib/source/stm32f4xx_ltdc.c" type="1"/>
@@ -204,8 +205,8 @@
     <File name=".git/objects/71/6aca76074062ffbb89823b0dfe4634b6db85be" path=".git/objects/71/6aca76074062ffbb89823b0dfe4634b6db85be" type="1"/>
     <File name="emWin/inc/ICONVIEW_Private.h" path="emWin/inc/ICONVIEW_Private.h" type="1"/>
     <File name=".git/objects/f7" path="" type="2"/>
-    <File name=".git/objects/56/ab2dca0521870e3ae1801cbdebc5cd662cb5dd" path=".git/objects/56/ab2dca0521870e3ae1801cbdebc5cd662cb5dd" type="1"/>
     <File name="emWin/inc/TREEVIEW_Private.h" path="emWin/inc/TREEVIEW_Private.h" type="1"/>
+    <File name=".git/objects/56/ab2dca0521870e3ae1801cbdebc5cd662cb5dd" path=".git/objects/56/ab2dca0521870e3ae1801cbdebc5cd662cb5dd" type="1"/>
     <File name="emWin/inc/DROPDOWN_Private.h" path="emWin/inc/DROPDOWN_Private.h" type="1"/>
     <File name=".git/objects/22/655500efe7b7adc33dc87c5defa5c83652f278" path=".git/objects/22/655500efe7b7adc33dc87c5defa5c83652f278" type="1"/>
     <File name=".git/objects/81" path="" type="2"/>
@@ -272,8 +273,8 @@
     <File name="emWin/inc/LCD_Private.h" path="emWin/inc/LCD_Private.h" type="1"/>
     <File name=".git/refs/remotes/origin/master" path=".git/refs/remotes/origin/master" type="1"/>
     <File name=".git/objects/9a/5fef403b2e020ff2808904120cc99ba932f4ca" path=".git/objects/9a/5fef403b2e020ff2808904120cc99ba932f4ca" type="1"/>
-    <File name=".git/objects/e5/1301f96c6a50bf2c0621be93641c3c1cc05887" path=".git/objects/e5/1301f96c6a50bf2c0621be93641c3c1cc05887" type="1"/>
     <File name=".git/objects/0c/1389d0c4b07005a276eca05e6713a5685cca56" path=".git/objects/0c/1389d0c4b07005a276eca05e6713a5685cca56" type="1"/>
+    <File name=".git/objects/e5/1301f96c6a50bf2c0621be93641c3c1cc05887" path=".git/objects/e5/1301f96c6a50bf2c0621be93641c3c1cc05887" type="1"/>
     <File name=".git/objects/79" path="" type="2"/>
     <File name=".git/objects/97" path="" type="2"/>
     <File name=".git/objects/05/6012b2c75fa699d718199b04d7bd4b1958a194" path=".git/objects/05/6012b2c75fa699d718199b04d7bd4b1958a194" type="1"/>
@@ -283,6 +284,7 @@
     <File name=".git/objects/78" path="" type="2"/>
     <File name=".git/objects/65/65e65df12bc66d57df82833c1f8abc12fdf4e0" path=".git/objects/65/65e65df12bc66d57df82833c1f8abc12fdf4e0" type="1"/>
     <File name="emWin/inc/LCD_SIM.h" path="emWin/inc/LCD_SIM.h" type="1"/>
+    <File name="cmsis_lib/include/stm32f4xx_pwr.h" path="cmsis_lib/include/stm32f4xx_pwr.h" type="1"/>
     <File name="emWin/inc/GUI_SPRITE_Private.h" path="emWin/inc/GUI_SPRITE_Private.h" type="1"/>
     <File name=".git" path="" type="2"/>
     <File name="emWin/inc/GUIDRV_FlexColor.h" path="emWin/inc/GUIDRV_FlexColor.h" type="1"/>
@@ -310,9 +312,9 @@
     <File name="cmsis_lib/include/stm32f4xx_dma2d.h" path="cmsis_lib/include/stm32f4xx_dma2d.h" type="1"/>
     <File name="emWin/ub/stm32_ub_i2c3.h" path="emWin/ub/stm32_ub_i2c3.h" type="1"/>
     <File name="cmsis" path="" type="2"/>
+    <File name="emWin/inc/WM.h" path="emWin/inc/WM.h" type="1"/>
     <File name=".git/objects/78/dda12c00bcb450f3d5fec4d795bd6568600337" path=".git/objects/78/dda12c00bcb450f3d5fec4d795bd6568600337" type="1"/>
     <File name="emWin/inc/GUI_SetOrientationCX.h" path="emWin/inc/GUI_SetOrientationCX.h" type="1"/>
-    <File name="emWin/inc/WM.h" path="emWin/inc/WM.h" type="1"/>
     <File name=".git/refs/tags" path="" type="2"/>
     <File name=".git/objects/78/19eb1915e402f137982f0e294a0edc876b4b16" path=".git/objects/78/19eb1915e402f137982f0e294a0edc876b4b16" type="1"/>
     <File name=".git/objects/f0" path="" type="2"/>

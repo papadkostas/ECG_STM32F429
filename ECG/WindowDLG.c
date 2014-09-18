@@ -30,6 +30,9 @@ Requirements: WindowManager - (x)
 
 #include "DIALOG.h"
 #include "GRAPH.h"
+#include "stm32f4xx_pwr.h"
+#include "stm32_ub_led.h"
+#include "stm32_ub_stemwin.h"
 #include "stm32_ub_adc1_single.h"
 /*********************************************************************
 *
@@ -49,7 +52,7 @@ Requirements: WindowManager - (x)
 static GRAPH_DATA_Handle  _ahData[3]; // Array of handles for the GRAPH_DATA objects
 static GRAPH_SCALE_Handle _hScaleV;   // Handle of vertical scale
 static GRAPH_SCALE_Handle _hScaleH;   // Handle of horizontal scale
-
+static unsigned int val;
 static I16 _aValue[3];
 static int _Stop = 0;
 static float DIVIDER;
@@ -59,25 +62,17 @@ static GUI_COLOR _aColor[] = {GUI_RED, GUI_GREEN, GUI_LIGHTBLUE}; // Array of co
 // Dialog ressource
 //
 static const GUI_WIDGET_CREATE_INFO _aDialogCreate[] = {
-  { FRAMEWIN_CreateIndirect, "ECG with STM32F429-Discovery and emWin",  0,   0,   0, 240, 320, FRAMEWIN_CF_MOVEABLE },
-  { GRAPH_CreateIndirect,     0,                   GUI_ID_GRAPH0    ,   5,   5, 230, 170 },
-  { TEXT_CreateIndirect,      "Spacing X:",        0                ,   5, 185,  50,  20 },
-  { TEXT_CreateIndirect,      "Spacing Y:",        0                ,   5, 205,  50,  20 },
-  { SLIDER_CreateIndirect,    0,                   GUI_ID_SLIDER0   ,  60, 185,  60,  16 },
-  { SLIDER_CreateIndirect,    0,                   GUI_ID_SLIDER1   ,  60, 205,  60,  16 },
-  { CHECKBOX_CreateIndirect,  0,                   GUI_ID_CHECK0    , 130, 185,  50,   0 },
-  { CHECKBOX_CreateIndirect,  0,                   GUI_ID_CHECK1    , 130, 205,  50,   0 },
-  { TEXT_CreateIndirect,      "Border",            0                ,   5, 285,  35,  15 },
-  { CHECKBOX_CreateIndirect,  0,                   GUI_ID_CHECK2    ,  40, 285,  35,   0 },
-  { CHECKBOX_CreateIndirect,  0,                   GUI_ID_CHECK3    ,  70, 285,  35,   0 },
-  { CHECKBOX_CreateIndirect,  0,                   GUI_ID_CHECK4    , 100, 285,  35,   0 },
-  { CHECKBOX_CreateIndirect,  0,                   GUI_ID_CHECK5    , 130, 285,  35,   0 },
-  { TEXT_CreateIndirect,      "Effect",            0                ,   5, 230,  35,  15 },
-  { RADIO_CreateIndirect,     0,                   GUI_ID_RADIO0    ,  40, 230,  35,   0, 0, 3 },
-  { CHECKBOX_CreateIndirect,  0,                   GUI_ID_CHECK6    , 180, 185,  50,   0 },
-  { CHECKBOX_CreateIndirect,  0,                   GUI_ID_CHECK7    , 180, 205,  50,   0 },
-  { BUTTON_CreateIndirect,    "Full Screen",       GUI_ID_BUTTON0   , 160, 270,  65,  18 },
-  { CHECKBOX_CreateIndirect,  0,                   GUI_ID_CHECK8    , 180, 235,  70,   0 },
+  { FRAMEWIN_CreateIndirect, "ECG with STM32F429-Discovery and emWin",  0,   0,   0, 240, 320, 0, 0x64, 0 },
+  { GRAPH_CreateIndirect,     0,                   GUI_ID_GRAPH0    ,   5,   5, 230, 230 },
+  { TEXT_CreateIndirect,      "Spacing X:",        0                ,   5, 245,  50,  20 },
+  { TEXT_CreateIndirect,      "Spacing Y:",        0                ,   5, 275,  50,  20 },
+  { SLIDER_CreateIndirect,    0,                   GUI_ID_SLIDER0   ,  60, 245,  60,  16 },
+  { SLIDER_CreateIndirect,    0,                   GUI_ID_SLIDER1   ,  60, 275,  60,  16 },
+  { CHECKBOX_CreateIndirect,  0,                   GUI_ID_CHECK0    , 130, 245,  50,   0 },
+  { CHECKBOX_CreateIndirect,  0,                   GUI_ID_CHECK1    , 130, 275,  50,   0 },
+  { CHECKBOX_CreateIndirect,  0,                   GUI_ID_CHECK6    , 180, 245,  50,   0 },
+  { CHECKBOX_CreateIndirect,  0,                   GUI_ID_CHECK7    , 180, 275,  50,   0 },
+  { BUTTON_CreateIndirect,    "Full Screen",       GUI_ID_BUTTON0   ,  10,  10,  65,  18 },
 };
 
 /*********************************************************************
@@ -95,7 +90,8 @@ static const GUI_WIDGET_CREATE_INFO _aDialogCreate[] = {
 *   and adds them to the GRAPH_DATA objects
 */
 static void _AddValues(void) {
-	_aValue[1]=UB_ADC1_SINGLE_Read(ADC_PA5)/DIVIDER;
+	val = UB_ADC1_SINGLE_Read(ADC_PA5)/DIVIDER;;
+	_aValue[1]= val;
 	GRAPH_DATA_YT_AddValue(_ahData[1], _aValue[1]);
 }
 
@@ -141,10 +137,10 @@ static void _ForEach(WM_HWIN hWin, void * pData) {
     return;
   }
   if (FullScreenMode) {
-	DIVIDER=13.9;
+	DIVIDER=13.8;
     WM_HideWindow(hWin);
   } else {
-	DIVIDER=27;
+	DIVIDER=19.5;
     WM_ShowWindow(hWin);
   }
 }
@@ -177,7 +173,7 @@ static void _ToggleFullScreenMode(WM_HWIN hDlg) {
 
     hClient = WM_GetClientWindow(hDlg);
     BUTTON_SetText(hButton, "Back");
-    WM_MoveWindow(hButton, 0, 11);
+    WM_MoveWindow(hButton, -5, -5);
     FRAMEWIN_SetTitleVis(hDlg, 0);
     WM_GetInsideRectEx(hClient, &RectInside);
     WM_GetWindowRectEx(hGraph, &Rect);
@@ -189,7 +185,7 @@ static void _ToggleFullScreenMode(WM_HWIN hDlg) {
     // Return to normal mode
     //
     BUTTON_SetText(hButton, "Full Screen");
-    WM_MoveWindow(hButton, 0, -11);
+    WM_MoveWindow(hButton, 5, 5);
     WM_ForEachDesc(WM_GetClientWindow(hDlg), _ForEach, &FullScreenMode); // Show all descendants
     WM_SetWindowPos(hGraph, Rect.x0, Rect.y0, Rect.x1 - Rect.x0 + 1, Rect.y1 - Rect.y0 + 1);
     FRAMEWIN_SetTitleVis(hDlg, 1);
@@ -215,6 +211,11 @@ static void _cbCallback(WM_MESSAGE * pMsg) {
   hDlg = pMsg->hWin;
   switch (pMsg->MsgId) {
   case WM_INIT_DIALOG:
+    hItem = pMsg->hWin;
+    FRAMEWIN_SetFont(hItem, GUI_FONT_6X8);
+    FRAMEWIN_SetTextAlign(hItem, GUI_TA_HCENTER | GUI_TA_VCENTER);
+    FRAMEWIN_SetText(hItem, "ECG with STM32F429-Discovery and emWin");
+    FRAMEWIN_SetTitleHeight(hItem, 14);
     hItem = WM_GetDialogItem(hDlg, GUI_ID_GRAPH0);
     //
     // Add graphs
@@ -235,14 +236,6 @@ static void _cbCallback(WM_MESSAGE * pMsg) {
     //
     // Init check boxes
     //
-    hItem = WM_GetDialogItem(hDlg, GUI_ID_CHECK2);
-    CHECKBOX_SetText(hItem, "L");
-    hItem = WM_GetDialogItem(hDlg, GUI_ID_CHECK3);
-    CHECKBOX_SetText(hItem, "T");
-    hItem = WM_GetDialogItem(hDlg, GUI_ID_CHECK4);
-    CHECKBOX_SetText(hItem, "R");
-    hItem = WM_GetDialogItem(hDlg, GUI_ID_CHECK5);
-    CHECKBOX_SetText(hItem, "B");
     hItem = WM_GetDialogItem(hDlg, GUI_ID_CHECK0);
     CHECKBOX_SetText(hItem, "Stop");
     hItem = WM_GetDialogItem(hDlg, GUI_ID_CHECK1);
@@ -253,26 +246,17 @@ static void _cbCallback(WM_MESSAGE * pMsg) {
     CHECKBOX_SetState(hItem, 1);
     hItem = WM_GetDialogItem(hDlg, GUI_ID_CHECK7);
     CHECKBOX_SetText(hItem, "VScroll");
-    hItem = WM_GetDialogItem(hDlg, GUI_ID_CHECK8);
-    CHECKBOX_SetText(hItem, "MirrorX");
     //
     // Init slider widgets
     //
     hItem = WM_GetDialogItem(hDlg, GUI_ID_SLIDER0);
     SLIDER_SetRange(hItem, 0, 10);
-    SLIDER_SetValue(hItem, 5);
+    SLIDER_SetValue(hItem, 3);
     SLIDER_SetNumTicks(hItem, 6);
     hItem = WM_GetDialogItem(hDlg, GUI_ID_SLIDER1);
-    SLIDER_SetRange(hItem, 0, 20);
-    SLIDER_SetValue(hItem, 5);
+    SLIDER_SetRange(hItem, 0, 10);
+    SLIDER_SetValue(hItem, 3);
     SLIDER_SetNumTicks(hItem, 6);
-    //
-    // Init radio widget
-    //
-    hItem = WM_GetDialogItem(hDlg, GUI_ID_RADIO0);
-    RADIO_SetText(hItem, "3D", 0);
-    RADIO_SetText(hItem, "flat", 1);
-    RADIO_SetText(hItem, "-", 2);
     //
     // Init button widget
     //
@@ -305,20 +289,6 @@ static void _cbCallback(WM_MESSAGE * pMsg) {
         hItem = WM_GetDialogItem(hDlg, GUI_ID_GRAPH0);
         GRAPH_SetGridVis(hItem, CHECKBOX_IsChecked(WM_GetDialogItem(hDlg, GUI_ID_CHECK1)));
         break;
-      case GUI_ID_CHECK2:
-      case GUI_ID_CHECK3:
-      case GUI_ID_CHECK4:
-      case GUI_ID_CHECK5:
-        //
-        // Toggle border
-        //
-        hItem = WM_GetDialogItem(hDlg, GUI_ID_GRAPH0);
-        GRAPH_SetBorder(hItem,
-                        CHECKBOX_IsChecked(WM_GetDialogItem(hDlg, GUI_ID_CHECK2)) * 40,
-                        CHECKBOX_IsChecked(WM_GetDialogItem(hDlg, GUI_ID_CHECK3)) * 5,
-                        CHECKBOX_IsChecked(WM_GetDialogItem(hDlg, GUI_ID_CHECK4)) * 5,
-                        CHECKBOX_IsChecked(WM_GetDialogItem(hDlg, GUI_ID_CHECK5)) * 5);
-        break;
       case GUI_ID_SLIDER0:
         //
         // Set horizontal grid spacing
@@ -336,23 +306,6 @@ static void _cbCallback(WM_MESSAGE * pMsg) {
         Value = SLIDER_GetValue(pMsg->hWinSrc) * 5;
         GRAPH_SetGridDistY(hItem, Value);
         GRAPH_SCALE_SetTickDist(_hScaleV, Value);
-        break;
-      case GUI_ID_RADIO0:
-        //
-        // Set the widget effect
-        //
-        hItem = WM_GetDialogItem(hDlg, GUI_ID_GRAPH0);
-        switch (RADIO_GetValue(pMsg->hWinSrc)) {
-        case 0:
-          WIDGET_SetEffect(hItem, &WIDGET_Effect_3D);
-          break;
-        case 1:
-          WIDGET_SetEffect(hItem, &WIDGET_Effect_Simple);
-          break;
-        case 2:
-          WIDGET_SetEffect(hItem, &WIDGET_Effect_None);
-          break;
-        }
         break;
       case GUI_ID_CHECK6:
         //
@@ -374,21 +327,6 @@ static void _cbCallback(WM_MESSAGE * pMsg) {
           GRAPH_SetVSizeY(hItem, 300);
         } else {
           GRAPH_SetVSizeY(hItem, 0);
-        }
-        break;
-      case GUI_ID_CHECK8:
-        //
-        // Toggle alignment
-        //
-        WM_GetDialogItem(hDlg, GUI_ID_GRAPH0);
-        for (i = 0; i < GUI_COUNTOF(_aColor); i++) {
-          if (CHECKBOX_IsChecked(WM_GetDialogItem(hDlg, GUI_ID_CHECK8))) {
-            GRAPH_DATA_YT_SetAlign(_ahData[i], GRAPH_ALIGN_LEFT);
-            GRAPH_DATA_YT_MirrorX (_ahData[i], 1);
-          } else {
-            GRAPH_DATA_YT_SetAlign(_ahData[i], GRAPH_ALIGN_RIGHT);
-            GRAPH_DATA_YT_MirrorX (_ahData[i], 0);
-          }
         }
         break;
       }
@@ -414,25 +352,31 @@ void MainTask(void) {
   WM_HWIN hDlg;
   WM_HWIN hGraph;
   UB_ADC1_SINGLE_Init();
+  UB_Led_Init();
+  UB_Led_On(LED_GREEN);
+  PWR_WakeUpPinCmd(ENABLE);
+  DIVIDER = 19.5;
   hGraph = 0;
-  DIVIDER = 20;
   GUI_Init();
   GUI_CURSOR_Show();
   WM_SetDesktopColor(GUI_BLACK);
+  BUTTON_SetDefaultSkin   (BUTTON_SKIN_FLEX);
+  CHECKBOX_SetDefaultSkin (CHECKBOX_SKIN_FLEX);
   #if GUI_SUPPORT_MEMDEV
     WM_SetCreateFlags(WM_CF_MEMDEV);
   #endif
   hDlg = GUI_CreateDialogBox(_aDialogCreate, GUI_COUNTOF(_aDialogCreate), _cbCallback, 0, 0, 0);
   while (1) {
-    #ifdef WIN32
-      //GUI_Delay(10);
-    #endif
     if (!_Stop) {
       if (!hGraph) {
         hGraph = WM_GetDialogItem(hDlg, GUI_ID_GRAPH0);
       }
       _AddValues();
+      UB_Led_Toggle(LED_RED);
     }
+    else {
+    	UB_Led_Off(LED_RED);
+	}
     GUI_Exec();
   }
 }

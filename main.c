@@ -1,5 +1,4 @@
 #include "main.h"
-#include "math.h"
 int main(void){
 	SystemInit();
   	UB_STemWIN_init();
